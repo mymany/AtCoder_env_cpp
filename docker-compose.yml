@@ -4,10 +4,6 @@ services:
     build: 
       context: ./
     privileged: true
-##    volumes:
- ##     - "./:/usr/share/nginx/html"
- ##   ports:
- ##     - 3004:3000
- ##     - 6006:6006
- ##     - 9229:9229
+    volumes:
+      - "./workspace:/home/projects"
     container_name: at_coder
